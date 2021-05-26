@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Q5 - Write a JavaScript program to reverse a given stringand alsocheck if string is palindrome or not
+</title>
+    </head>
+    <script>
+   
+
+function reverseString(str) {
+
+   
+    let newString = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
+
+function checkPalindrome(str) {
+
+    
+    const len = string.length;
+
+   
+    for (let i = 0; i < len / 2; i++) {
+
+        
+        if (string[i] !== string[len - 1 - i]) {
+            return 'It is not a palindrome';
+        }
+    }
+    return 'It is a palindrome';
+}
+
+const string = prompt('Enter a string: ');
+
+const result = reverseString(string);
+const value = checkPalindrome(string);
+document.write("Write a JavaScript program to reverse a given stringand alsocheck if string is palindrome or not ");
+        document.write('<br><br>')
+document.write("Reverse String is "+result);
+document.write('<br><br>')
+document.write(value);   
+    </script>
+    <body>
+    <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Q7 - Write a JavaScript function to remove HTML/XML tagsfromstring.
+</title>
+    </head>
+    <script>
+   
+const originalString = `
+ <p><strong><em>"SkillSantaAssignments"</em></strong></p>
+`;
+
+const strippedString = originalString.replace(/(<([^>]+)>)/gi, "");
+document.write("<p> Q7 - Write a JavaScript function to remove HTML/XML tagsfromstring.</p>");
+document.write("<br><br>");        
+document.write(strippedString);
+
+    </script>
+    <body>
+    <p>
+        </p>
+    </body>
+</html>

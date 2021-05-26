@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Q2 - Write a JS function and ask for user DOB ex: 10/June/1998 and if
+user age is between 18 to 44 then this link should be open
+automatically in browser “https://selfregistration.cowin.gov.in”.
+</title>
+    </head>
+    <script>
+         
+    let username = prompt("Enter your name: ");
+ let DOB = prompt("Enter DOB ");
+ let age = parseInt(prompt("Enter your Age: "));
+
+if (age > 44) {
+ document.write("Welcome! " + username + "<br>")
+document.write("You can take Vaccine");
+    document.location.href = "https://selfregistration.cowin.gov.in";
+ } else if (age > 18) {
+     document.write(username + " You can register for vaccine");
+  document.location.href = "https://selfregistration.cowin.gov.in";
+} else {
+    document.write("Sorry! " + username + " now you can not take vaccine!");
+ }
+
+    </script>
+    <body>
+    <p>
+        </p>
+    </body>
+</html>
